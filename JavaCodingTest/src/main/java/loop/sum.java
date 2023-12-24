@@ -11,7 +11,7 @@ public class sum {
             sum += i;
         }
         System.out.println(sum);
-        System.out.println("아냐");
+        // System.out.println("아냐");
         /*
         나는 되지롱
         */

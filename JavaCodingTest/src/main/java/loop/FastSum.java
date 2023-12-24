@@ -18,5 +18,6 @@ public class FastSum {
         }
         br.close();
         bw.flush();
+        bw.close();
     }
 }
