@@ -13,5 +13,10 @@ public class multiple {
         System.out.println(A * (B / 100));
         System.out.println(A * B);
 
+        String a = null;
+        int b = Integer.parseInt(a);
+        System.out.println(b);
+
+
     }
 }
