@@ -2,8 +2,9 @@ package loop;
 
 import java.util.Scanner;
 
-public class Main {
+public class star {
     public static void main(String[] args) {
+        // 2438 별 찍기 -1
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         StringBuilder sb = new StringBuilder();
