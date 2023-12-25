@@ -6,6 +6,10 @@ import java.util.StringTokenizer;
 
 public class MinAndMax {
     public static void main(String[] args) {
+        /*
+        10818 최소 최대
+        정수 배열의 최소, 최대값 구하기
+         */
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         sc.nextLine();

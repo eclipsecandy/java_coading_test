@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class LessThanX {
     public static void main(String[] args) {
+        /*
+        10871 X보다 작은 수
+         */
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int X = sc.nextInt();
