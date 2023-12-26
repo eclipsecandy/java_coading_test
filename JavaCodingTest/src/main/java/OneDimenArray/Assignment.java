@@ -1,20 +1,22 @@
 package OneDimenArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Assignment {
     public static void main(String[] args) {
         /*
         5597 과제 안 내신 분..?
         30명 중 과제 안한 두명 찾기
          */
+
         Scanner sc = new Scanner(System.in);
+        /*
         int[] arr = new int[28];
         for(int i = 0; i < 28; i++) {
             arr[i] = sc.nextInt();
         }
         Arrays.sort(arr);
+
         int[] sub = new int[2];
         for(int i = 0; i < 28; i++) {
             if(arr[i] != i + 1) {
@@ -30,7 +32,20 @@ public class Main {
             }
         }
         if(sub[1] == 0) sub[1] = 30;
+
         System.out.println(sub[0]);
         System.out.println(sub[1]);
+        */
+
+        int[] arr = new int[30];
+        for(int i = 0; i < 28; i++) {
+            int num = sc.nextInt();
+            arr[num - 1] = num;
+        }
+
+        int[] sub = new int[2];
+        for(int i = 0; i < 30; i++) {
+            if(arr[i] == 0) System.out.println(i + 1);
+        }
     }
 }
