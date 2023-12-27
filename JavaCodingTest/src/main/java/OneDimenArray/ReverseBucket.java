@@ -1,10 +1,14 @@
 package OneDimenArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReverseBucket {
     public static void main(String[] args) {
+        /*
+        10811 바구니 뒤집기
+        N개의 바구니를 M번 역순으로 만들기
+        한 번 뒤집을 때 i ~ j까지 역순으로 만들기
+         */
         Scanner sc = new Scanner(System.in);
         int busketNum = sc.nextInt();
         int repeat = sc.nextInt();
