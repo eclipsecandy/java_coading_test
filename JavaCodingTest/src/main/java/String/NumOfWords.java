@@ -9,7 +9,7 @@ public class NumOfWords {
         1152 단어의 개수
         문자열의 단어 개수 구하기
          */
-        StringTokenizer st = new StringTokenizer(new Scanner(System.in).nextLine(), " ");
+        StringTokenizer st = new StringTokenizer(new Scanner(System.in).nextLine(), "a");
         System.out.println(st.countTokens());
     }
 }
