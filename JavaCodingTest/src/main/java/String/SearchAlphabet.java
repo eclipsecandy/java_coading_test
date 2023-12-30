@@ -1,6 +1,5 @@
 package String;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SearchAlphabet {
@@ -10,6 +9,7 @@ public class SearchAlphabet {
         특정 알파벳이 포함되어 있으면 위치를, 없으면 -1 출력
          */
         String str = new Scanner(System.in).nextLine();
+        /*
         int[] arr = new int[26];
         for(int i = 0; i < arr.length; i++) {
             arr[i] = -1;
@@ -26,5 +26,12 @@ public class SearchAlphabet {
         for(int i : arr) {
             System.out.print(i + " ");
         }
+
+         */
+        for(int i = 97; i < 123; i++) {
+            char a = (char) i;
+            System.out.print(str.indexOf(a) + " ");
+        }
+
     }
 }
