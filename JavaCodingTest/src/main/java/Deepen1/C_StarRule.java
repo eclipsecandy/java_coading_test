@@ -35,7 +35,7 @@ public class C_StarRule {
             StringBuilder sb = new StringBuilder();
             for(int j = 0; j < line; j++) {
                 int a = Math.abs(i - line / 2);
-                sb.append((a <= j && j <= line / 2 + a) ? "*" : " ");
+                sb.append((a <= j && j <= line / 2 * 2 - a) ? "*" : " ");
             }
             System.out.println(sb.toString());
         }
