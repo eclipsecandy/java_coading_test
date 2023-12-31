@@ -9,7 +9,6 @@ public class C_StarRule {
         규칙에 맞게 별 찍기 2N - 1개씩 중앙정렬 별 찍기
          */
         // 방법1
-        /*
         int N = new Scanner(System.in).nextInt();
         int line = 2 * N - 1;
         String[] arr = new String[line];
@@ -27,8 +26,8 @@ public class C_StarRule {
         for(int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
-         */
-        // 방법2
+        /*
+        // 방법2 채점은 안됨
         int N = new Scanner(System.in).nextInt();
         int line = 2 * N - 1;
         for(int i = 0; i < line; i++) {
@@ -39,11 +38,10 @@ public class C_StarRule {
             }
             System.out.println(sb.toString());
         }
+         */
         /*
         line / 2 == 4
         abs(i - line / 2) <= j <= line/ 2 * 2 - abs(i - line / 2)
-        abs(i - line / 2) <= j <= line / 2 + abs(i - line / 2)
-        Math.abs(line / 2 - i) <= j <= line / 2 + i
         0 : 4 <= j <= 4
         1 : 3 <= j <= 5
         2 : 2 <= j <= 6
@@ -51,9 +49,6 @@ public class C_StarRule {
         4 : 0 <= j <= 8
         5 : 1 <= j <= 7
         6 : 2 <= j <= 6
-
-
-
          */
 
     }
