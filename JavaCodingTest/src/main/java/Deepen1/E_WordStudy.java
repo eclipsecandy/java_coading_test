@@ -1,6 +1,5 @@
 package Deepen1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class E_WordStudy {
@@ -16,20 +15,16 @@ public class E_WordStudy {
             arr[str.toUpperCase().charAt(i) - 65]++;
         }
         char max = 'A';
-        /*
         for(int i = 0; i < arr.length - 1; i++) {
-            if(arr[i] < arr[i + 1]) max = (char)(i + 1 + 65);
+            if(arr[i] < arr[i + 1]) {
+                max = (char)(i + 1 + 65);
+            }
         }
-        for(int i = 0; i < 26; i++) {
-            if(i != max - 65 && arr[i] == arr[max - 65]) {
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[max - 65] == arr[i] && max - 65 != i) {
                 max = '?';
                 break;
             }
-        }
-         */
-        Arrays.sort(arr);
-        for(int i = 0; i < arr.length; i++) {
-            
         }
         System.out.println(max);
     }
