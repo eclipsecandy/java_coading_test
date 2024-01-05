@@ -10,7 +10,7 @@ public class F_Croatia {
          */
         String str = new Scanner(System.in).nextLine();
         String[] arr = {"c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="};
-        
+
 
         System.out.println(str.contains("abc"));
     }
