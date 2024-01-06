@@ -1,5 +1,6 @@
 package Deepen1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class E_WordStudy {
@@ -14,6 +15,7 @@ public class E_WordStudy {
         for(int i = 0; i < str.length(); i++) {
             arr[str.toUpperCase().charAt(i) - 65]++;
         }
+        /*
         char max = 'A';
         for(int i = 0; i < arr.length - 1; i++) {
             if(arr[i] < arr[i + 1]) {
@@ -27,5 +29,27 @@ public class E_WordStudy {
             }
         }
         System.out.println(max);
+         */
+        int max = Arrays.stream(arr).max().orElse(0); // 4
+        char alpa = 'A';
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == max) {
+                alpa = (char)(i + 65);
+                break;
+            }
+            /*
+            for(int j = 0; j < arr.length; j++){
+                if(alpa == (char)(j + 65) && i != j) alpa = '?';
+                break;
+            }
+             */
+        }
+        for(int i = 0; i < arr.length; i++) {
+            if (arr[i] == max && i + 65 != alpa) {
+                alpa = '?';
+                break;
+            }
+        }
+        System.out.println(alpa);
     }
 }
