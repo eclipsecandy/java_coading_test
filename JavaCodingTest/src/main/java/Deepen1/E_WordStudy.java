@@ -9,12 +9,14 @@ public class E_WordStudy {
         1157 단어 공부
         가장 많이 나온 알파벳 대문자로 출력
          */
-        // 메모리 초과
-        String str = new Scanner(System.in).nextLine();
+        // 메모리 초과 (다르게 2개해봄)
+        String str = new Scanner(System.in).nextLine().toUpperCase();
+        /*
         int[] arr = new int[26];
         for(int i = 0; i < str.length(); i++) {
             arr[str.toUpperCase().charAt(i) - 65]++;
         }
+         */
         /*
         char max = 'A';
         for(int i = 0; i < arr.length - 1; i++) {
@@ -30,6 +32,7 @@ public class E_WordStudy {
         }
         System.out.println(max);
          */
+        /*
         int max = Arrays.stream(arr).max().orElse(0); // 4
         char alpa = 'A';
         for(int i = 0; i < arr.length; i++){
@@ -37,12 +40,10 @@ public class E_WordStudy {
                 alpa = (char)(i + 65);
                 break;
             }
-            /*
             for(int j = 0; j < arr.length; j++){
                 if(alpa == (char)(j + 65) && i != j) alpa = '?';
                 break;
             }
-             */
         }
         for(int i = 0; i < arr.length; i++) {
             if (arr[i] == max && i + 65 != alpa) {
@@ -51,5 +52,16 @@ public class E_WordStudy {
             }
         }
         System.out.println(alpa);
+         */
+
+        int[] arr = new int[str.length()];
+        for(int i = 0; i < str.length(); i++){
+            arr[i]++;
+            for(int j = 0; j < str.length(); j++){
+                if(arr[i] == arr[j]) arr[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+
     }
 }
